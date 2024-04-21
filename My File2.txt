@@ -1,0 +1,133 @@
+moves  = переезжает  = переезжает 
+
+enhance  = увеличить
+maintainability = ремонтопригодность
+readability  = читаемость
+necessary = необходимо
+
+contents  = содержание 
+changes  = изменения
+waiting  = ожиданиеBoth  = Оба 
+function's  = функция 
+these  = эти 
+omitted = опущено
+Otherwise = Otherwise = В противном случае
+specify  = указать 
+criteria  = критерии
+identify  = определить 
+substring  = подстрока
+from a single text element  = from a single text element  = из одного текстового элемента 
+or for WinText a substring from a single text element of the target window = или для WinText подстрока из одного текстового элемента целевого окна
+revealed  = раскрыто 
+utility = utility = утилита
+General Conventions = Общие конвенции
+No typed variables: = Никаких типизированных переменных:
+explicitly  = явно
+defined  = определено
+Variables have no explicitly defined type = Переменные не имеют явно определенного типа
+instead = вместо этого
+excluding  = за исключением 
+built-in variables = встроенные переменные
+and vice versa,  = и наоборот, 
+Except where noted on the functions page = За исключением случаев, указанных на странице функций
+Except  = Кроме 
+noted  = отметил 
+However = Однако
+attempting  = попытка
+considered  = считается 
+Indentation  = Вдавливание
+significant  = значительный 
+performing  = выполнение 
+concatenation = конкатенация
+ambiguity = двусмысленность
+meaningful = содержательный
+Line breaks are meaningful = Разрывы строк имеют смысл
+breaks  = ломается
+generally  = в целом 
+act  = акт 
+statement  = заявление 
+separator = сепаратор
+terminating  = прекращение
+statement = утверждение 
+Line breaks generally act as a statement separator, terminating the previous function call or other statement. = 
+expresses  = выражает
+A statement is simply the smallest standalone element of the language that expresses some action to be carried out = Высказывание - это просто наименьший отдельный элемент языка, который выражает некоторое действие, которое должно быть выполнено = exception  =
+ exception  = исключение 
+The exception to this is line continuation = maintainability = preprocessing = merged  = regardless  = независимо от 
+merged  = объединенный 
+regardless  = независимо от 
+whether  = whether  =
+Lines are merged regardless of whether the line actually contains an expression. 
+= Строки объединяются независимо от того, содержит ли строка выражение.
+appear  = появляться 
+valid  = действительный 
+Usually = Обычно
+performs  = выполняет
+evaluation = оценка
+The process of finding out the value of an expression is called evaluation 
+= Процесс нахождения значения выражения называется оценкой
+pieced  = сшитый 
+increasingly  = все больше 
+complex  = комплекс
+Simple expressions can be pieced together to form increasingly more complex expressions. 
+= Из простых выражений можно составлять все более сложные выражения.
+Discount =  if Discount/100 converts a discount percentage to a fraction = 
+representing  = представляя 
+
+remaining  = остаток 
+amount = сумма
+1 - Discount/100 calculates a fraction representing the remaining amount, = 1 - Discount/100 calculates a fraction representing the remaining amount, = applies  = применяется 
+produce  = производить 
+and Price * (1 - Discount/100) applies it to produce the net price. 
+= и Цена * (1 - Скидка/100) применяется для получения чистой цены.
+
+literal  = дословно 
+ A literal value is one written physically in the script 
+ =  Буквальное значение - это значение, записанное физически в скрипте
+ one that you can see when you look at the code. 
+ =  один, который можно увидеть при просмотре кода.
+A string, or string of characters, is just a text value. 
+= Строка, или строка символов, - это просто текстовое значение.
+
+quotation  = quotation  = quotation  = котировка 
+
+often  = referred  = направлено
+linefeed = перевод строки
+•Implicit  = •Implicit  = Implicit  = Имплицитный 
+•Explicit = preceding  = предшествующий 
+mandatory = обязательный
+signs  = Unlike the read-only built-in variables, these cannot be returned by a dynamic reference. = 
+A value or sub-expression used as input for an operator is called an operand. 
+= Значение или подвыражение, используемое в качестве входных данных для оператора, называется операндом.
+Unary  = ternary  = ternary  = unless  = если только 
+evaluated  = оценено
+otherwise  = otherwise  = иначе 
+specified  = указанный
+precedence  = приоритет 
+Parentheses  = override  = Parentheses  = Скобки
+override 
+Скобки 
+general  = related  = связанный 
+perform  = followed  = A function is called simply by writing the target function followed by parameters enclosed in parenthese = evaluates  = For those new to programming = requirement  = требование 
+seem  = казаться 
+cryptic  = криптовалюта 
+verbose  = For those new to programming, the requirement for parentheses may seem cryptic or verbose at first = Although  = reference = In the expression GetKeyState("Shift"), GetKeyState is actually a variable reference, although it usually refers to a read-only variable containing a built-in function. = Function Call Statements = Parentheses  = As with function call expressions, the target of a function call statement does not have to be a predefined function; it can instead be a variable containing a function object. = discarded = •If there is a return value, it is always discarded. = subsequent  = последующие 
+Within a function call, array literal or object literal, the keyword unset can be used to explicitly omit the parameter or value. An unset expression has one of the following effects: = relate  = Providing  = Предоставление 
+construct  = does  = Providing a full explanation of what each construct does would require introducing more concepts which are outside the scope of this section. = Alpha.Beta is often called member access. Alpha is an ordinary variable, and could be replaced with a function call or some other sub-expression which returns an object. When evaluated, the object is sent a request "give me the value of property Beta", "store this value in property Beta" or "call the method named Beta". In other words, Beta is a name which has meaning to the object; it is not a local or global variable.
+
+Alpha.Beta() is a method call, as described above. The parentheses can be omitted in specific cases; see Function Call Statements.
+
+Alpha.Beta[Param] is a specialised form of member access which includes additional parameters in the request. While Beta is a simple name, Param is an ordinary variable or sub-expression, or a list of sub-expressions separated by commas (the same as in a function's parameter list). Variadic calls are permitted.
+
+Alpha.%vBeta%, Alpha.%vBeta%[Param] and Alpha.%vBeta%() are also member access, but vBeta is a variable or sub-expression. This allows the name of the property or method to be determined while the script is running. Parentheses are required when calling a method this way.
+
+Alpha[Index] accesses the default property of Alpha, giving Index as a parameter. Both Alpha and Index are variables in this case, and could be replaced with virtually any sub-expression. This syntax is usually used to retrieve an element of an Array or Map.
+ = literally  = properties  = {Prop1: Value1, Prop2: Value2} creates an Object with properties literally named Prop1 and Prop2. A value can later be retrieved by using the member access syntax described above. To evaluate a property name as an expression, enclose it in percent signs. For example: {%NameVar%: ValueVar}. = asterisk  = immediately  = precede  = The asterisk must immediately precede the closing parenthesis at the end of the function's parameter list. =  Params must be a variable or sub-expression which returns an Array or other enumerable object = Although  =  Although it isn't valid to use Params* just anywhere, it can be used in an array literal ([A, B, C, ArrayToAppend*]) or property parameter list (Alpha.Beta[Params*] or Alpha[Params*]). = otherwise they would be assumed global. = Ternary expressions such as x ? CallIfTrue() : CallIfFalse(). However, it is safer to utilize the rule below; that is, always enclose the expression (or just the condition) in parentheses. = statements  = Known limitation: Due to ambiguity with function call statements, conditions beginning with a variable name and space (but also containing other operators) should be enclosed in parentheses. For example, (x + 1) ? y : z and x+1 ? y : z  are expression statements but x + 1 ? y : z is a function call statement. = содержащие 
+implementation  = реализация
+complexity = сложность
+those  = are similar to expression statements, but are technically not pure expressions.  = похожи на операторы выражения, но технически не являются чистыми выражениями. 
+Control Flow Statements = Заявления о потоках управления
+retrieves  = извлекает
+correspond  = recently  = recently  = recently 
+recently  = started  = innermost  = parsing  = Subroutines = A subroutine (also sub or procedure) is a reusable block of code which can be executed on demand. A subroutine is created by defining a function (see below). These terms are generally interchangeable for AutoHotkey v2, where functions are the only type of subroutine. = reference = ссылка
+resolves  = •If a parameter in a function-call resolves to a variable = other parameters to its left or right can alter that variable before it is passed to the function = unexpectedly  = pass  = dereferenced  = because the first Var is not dereferenced until the function call is executed. Since this behavior is counterintuitive, it might change in a future release. = essentially  = which usually corresponds to one of the caller's variables = refer  = contrast = By contrast, if ByRef were not used in the example above = thus  = explicitly  = partial  = property = Otherwise, the value of the sub-expression Expr is used as the name or partial name of a variable or property. = refer  = determined  = evaluating  =  The result of the sub-expression Expr must be the name or partial name of the variable or property to be accessed. = ambiguity = Otherwise, Expr can be any expression. = performed  = increments  = 

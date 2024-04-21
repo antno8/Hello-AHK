@@ -1,0 +1,66 @@
+FileAppend
+message
+treated 
+treated 
+treated Обработанный
+If blank or omitted, each character of the input string will be treated as a separate substring.
+If blank or omitted, each character of the input string will be treated as a separate substring.
+If this parameter is "CSV", the string will be parsed in standard comma separated value format. Here is an example of a CSV line produced by MS Excel:
+If this parameter is "CSV", the string will be parsed in standard comma separated value format. Here is an example of a CSV line produced by MS Excel:
+
+parsed разобранный
+comma запятая
+separated раздельный
+
+If this parameter is "CSV", the string will be parsed in standard comma separated value format
+If this parameter is "CSV", the string will be parsed in standard comma separated value format
+produced 
+produced произведено
+
+Otherwise в противном случае
+Otherwise
+specify 
+specify указать
+determine 
+determine определить
+boundaries 
+boundaries границы
+occur
+occur происходят
+происходят
+??????????
+FileEncoding "UTF-8"
+character 
+character 
+
+персонаж 
+персонаж 
+персонаж 
+персонаж 
+персонаж 
+MouseGetPos &mox, &moy, &id, &control
+A_Clipboard:=""
+    Send "^c"
+    ClipWait
+    MouseGetPos &mox, &moy, &id, &control
+    ;A_Clipboard := A_Clipboard
+    message := mox " " moy " " A_Clipboard "  " WinGetTitle(id)
+    FileAppend message "`r`n", "My File.txt"
+FileEncoding "UTF-8"
+SetTimer WatchCursor, 100
+
+WatchCursor()
+{
+    MouseGetPos , , &id, &control
+    ToolTip
+    (
+        "ahk_id " id "
+        ahk_class " WinGetClass(id) "
+        " WinGetTitle(id) "
+        Control: " control
+    )
+}
+персонаж 
+персонаж 
+
+
