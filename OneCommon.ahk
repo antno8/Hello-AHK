@@ -1,11 +1,10 @@
-﻿; Циклическое переключение между двумя выбранными языками ввода по клавише Control:
-#IfWinActive
+﻿#IfWinActive
 ~^Shift:: Exit
 ~+Ctrl:: Exit
 Ctrl::
   SetFormat, Integer, H
-  Locale1=0x4090409 ; Английский (американский).
-  Locale2=0x4190419 ; Русский.
+  Locale1=0x4090409 ; English
+  Locale2=0x4190419 ;  Russian
   WinGet, WinID,, A
   ThreadID:=DllCall("GetWindowThreadProcessId", "Int", WinID, "Int", "0")
   InputLocaleID:=DllCall("GetKeyboardLayout", "Int", ThreadID)
@@ -16,8 +15,7 @@ Ctrl::
 Exit
 XButton1::Suspend
 
-NumpadAdd::SoundSet +15 ; Увеличить общую громкость на 10%.
-NumpadSub::SoundSet -15 ; Уменьшить общую громкость на 10%
+NumpadSub::SoundSet -15 NumpadAdd::SoundSet +15 
 :*:aaa::f54o$RP$..??
 :*:cca::afm833@gmail.com
 :*:aaa::f54o$RP$..??
