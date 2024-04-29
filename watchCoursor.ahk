@@ -5,7 +5,7 @@ XButton1 & WheelUp::left
 XButton1 & WheelDown::right
 WheelUp::WheelUp
 WheelDown::WheelDown
-;XButton1::XButton1
+XButton1::XButton1
 ;LButton & RButton::Right
 ;LButton::LButton
 XButton2 & WheelDown::SoundSetVolume "-5" 
